@@ -1,3 +1,4 @@
+#和LASSO_0对照的看，可以发现用书上提到的从一个较大的alpha开始计算这种方法确实能够降低迭代的步骤。
 import numpy as np
 from numpy import *
 from LASSO_const import m,n,r,A,u,mu,b,x,alpha,delta, mu_end
