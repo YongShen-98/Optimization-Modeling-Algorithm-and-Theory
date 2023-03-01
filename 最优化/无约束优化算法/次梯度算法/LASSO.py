@@ -47,3 +47,6 @@ for i in range(4000):
     result_3 = result(x3)
 
 print(result_0,result_1,result_2,result_3)
+
+###最后这里发现步长取得越小，越不容易收敛，和书上的结果不太相符？？？？
+
