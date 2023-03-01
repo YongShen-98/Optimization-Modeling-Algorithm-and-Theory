@@ -33,7 +33,7 @@ def normal(x):
 result_gradf = np.empty(1)
 result_x = np.empty(1)
 delta = 10**(-3)*mu_end
-while normal(calculategradf(x,mu, delta,A,b)) > 10**(-6):
+while normal(calculategradf(x,mu_end, delta,A,b)) > 10**(-6):
     xnew = x - alpha*calculategradf(x, mu_end, delta, A, b)
     xnew = xnew.getA()                                       ##把计算出来的数据从matrix转换成array
     alpha = calculate(x, xnew, mu_end, delta, A, b)
