@@ -1,5 +1,4 @@
 import sys
-sys.path.append(r"C:\\Users\\Shen\\Desktop\\最优化\\无约束优化算法\\梯度类算法")
 from LASSO_const import *
 import matplotlib.pyplot as plt
 
@@ -15,7 +14,7 @@ def subgrandf(x, A, b, mu):
     return g
 
 def result(x):
-    return np.transpose(A@x-b)@(A@x-b) + mu*max(x)
+    return np.transpose(A@x-b)@(A@x-b) + mu*sum(x)
 
 mu = 1
 
